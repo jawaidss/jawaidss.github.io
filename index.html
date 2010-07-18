@@ -5,12 +5,43 @@
 <title>Samad Jawaid</title>
 <meta name="description" content="Samad Jawaid" />
 <link type="image/x-icon" href="static/favicon.ico" rel="shortcut icon" />
-<link type="text/css" href="static/css/black-tie/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+<link type="text/css" href="static/css/fancybox/jquery.fancybox-1.3.1.css" rel="stylesheet" />
 <link type="text/css" href="static/css/style.css" rel="stylesheet" />
 <script type="text/javascript" src="static/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="static/js/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="static/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="static/js/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="static/js/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
+    var alertTimerId = 0;
+    $("div#message").hide()
+    $("a[href=#myspace]").click(function() {
+        clearTimeout(alertTimerId);
+        $("div#message").html("Sorry, I'm too cool for MySpace.").slideDown();
+        alertTimerId = setTimeout (function() {
+            $("div#message").slideUp();
+        }, 3000 );
+        return false;
+    });
+    $("a[href=#twitter]").click(function() {
+        clearTimeout(alertTimerId);
+        $("div#message").html("Sorry, I'm not cool enough for Twitter, yet.").slideDown();
+        alertTimerId = setTimeout (function() {
+            $("div#message").slideUp();
+        }, 3000 );
+        return false;
+    });
+    $("div#messengers a").click(function() {
+        clearTimeout(alertTimerId);
+        $("div#message").html($(this).children().attr("alt") + ": samadj91").slideDown();
+        alertTimerId = setTimeout (function() {
+            $("div#message").slideUp();
+        }, 3000 );
+        return false;
+    });
+    $("div#fancybox a:has(img)").each(function() {
+        $(this).attr("title", $(this).siblings().html());
+    }).attr("rel", "screenshots").fancybox();
 });
 </script>
 <script type="text/javascript">
@@ -28,6 +59,73 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<h1>Samad Jawaid</h1>
+<div id="container">
+    <h1>Samad Jawaid</h1>
+    <div id="message"></div>
+    <div>
+        <a href="http://www.facebook.com/samadj91/"><img src="static/images/icons/facebook.png" alt="Facebook" /></a>
+        <a href="http://www.google.com/profiles/samadj91/"><img src="static/images/icons/google.png" alt="Google" /></a>
+        <a href="http://www.linkedin.com/in/samadj91/"><img src="static/images/icons/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#myspace"><img src="static/images/icons/myspace.png" alt="MySpace" /></a>
+        <br />
+        <a href="http://picasaweb.google.com/samadj91/"><img src="static/images/icons/picasa.png" alt="Picasa" /></a>
+        <a href="#twitter"><img src="static/images/icons/twitter.png" alt="Twitter" /></a>
+        <a href="http://profiles.yahoo.com/samadj91/"><img src="static/images/icons/yahoo.png" alt="Yahoo!" /></a>
+        <a href="http://www.youtube.com/samadj91/"><img src="static/images/icons/youtube.png" alt="YouTube" /></a>
+    </div>
+    <div id="messengers">
+        <a href="#"><img src="static/images/icons/aim.png" alt="AIM" /></a>
+        <a href="#"><img src="static/images/icons/gtalk.png" alt="Gtalk" /></a>
+        <a href="#"><img src="static/images/icons/skype.png" alt="Skype" /></a>
+        <a href="#"><img src="static/images/icons/yahoo.png" alt="Yahoo!" /></a>
+    </div>
+    <div id="fancybox">
+        <div>
+            <h2><a href="http://www.blackbird502.com/">Blackbird502</a></h2>
+            <a href="static/images/screenshots/bb502.png"><img src="static/images/screenshots/thumb_bb502.png" alt="Blackbird502"/></a>
+        </div>
+        <div>
+            <h2><a href="https://www.louisvillememorials.com/">Louisville Memorials</a></h2>
+            <a href="static/images/screenshots/loumem.png"><img src="static/images/screenshots/thumb_loumem.png" alt="Louisville Memorials"/></a>
+        </div>
+        <div>
+            <h2><a href="http://www.the2000block.com/">The 2000 Block</a></h2>
+            <a href="static/images/screenshots/block2k.png"><img src="static/images/screenshots/thumb_block2k.png" alt="The 2000 Block"/></a>
+        </div>
+        <div>
+            <h2><a href="http://www.greenlistlouisville.com/">GreenList Louisville</a></h2>
+            <a href="static/images/screenshots/gll.png"><img src="static/images/screenshots/thumb_gll.png" alt="GreenList Louisville"/></a>
+        </div>
+        <div>
+            <h2><a href="http://www.longlivetheville.com/">Long Live The Ville</a></h2>
+            <a href="static/images/screenshots/lltv.png"><img src="static/images/screenshots/thumb_lltv.png" alt="Long Live The Ville"/></a>
+        </div>
+        <div>
+            <h2><a href="https://www.accuscholar.com/">AccuScholar</a></h2>
+            <a href="static/images/screenshots/as.png"><img src="static/images/screenshots/thumb_as.png" alt="AccuScholar"/></a>
+        </div>
+        <div>
+            <h2><a href="https://www.accuscholar.com/ky/alma-mater/">AccuScholar Interactive (Demo)</a></h2>
+            <a href="static/images/screenshots/asi.png"><img src="static/images/screenshots/thumb_asi.png" alt="AccuScholar Interactive (Demo)"/></a>
+        </div>
+        <div>
+            <h2><a href="http://www.dspzl.org/">&#916;&#931;&#934; &#918;&#923;</a></h2>
+            <a href="static/images/screenshots/dsp-zl.png"><img src="static/images/screenshots/thumb_dsp-zl.png" alt="&#916;&#931;&#934; &#918;&#923;"/></a>
+        </div>
+        <div>
+            <h2>My FBLA Project</h2>
+            <a href="static/images/screenshots/fbla.png"><img src="static/images/screenshots/thumb_fbla.png" alt="My FBLA Project"/></a>
+        </div>
+        <div>
+            <h2><a href="https://www.dupontmanual.org/glml/">Greater Louisville Math League</a></h2>
+            <a href="static/images/screenshots/glml.png"><img src="static/images/screenshots/thumb_glml.png" alt="Greater Louisville Math League"/></a>
+        </div>
+        <div>
+            <h2><a href="http://www.osnapps.com/">oSnapps</a></h2>
+            <a href="static/images/screenshots/osnapps.png"><img src="static/images/screenshots/thumb_osnapps.png" alt="oSnapps"/></a>
+        </div>
+    </div>
+    <div id="footer">&copy; 2010</div>
+</div>
 </body>
 </html>

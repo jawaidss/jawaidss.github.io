@@ -1,0 +1,32 @@
+a {
+    color : #ffffff;
+    text-decoration : none;
+}
+body {
+    background-color : #171717;
+    color : #ffffff;
+    font-size : 15px;
+    text-align : center;
+}
+h1 {
+    font-size : 80px;
+}
+h2 {
+    font-size : 30px;
+}
+img {
+    border : 0;
+}
+#container {
+    margin : 0 auto;
+}
+#fancybox {
+    margin : 0 auto;
+    width : 600px;
+}
+#footer {
+    padding-top : 10px;
+}
+#message {
+    padding-bottom : 10px;
+}
