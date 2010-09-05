@@ -23,14 +23,6 @@ $(document).ready(function() {
         }, 3000 );
         return false;
     });
-    $("a[href=#twitter]").click(function() {
-        clearTimeout(alertTimerId);
-        $("div#message").html("Sorry, I'm not cool enough for Twitter, yet.").slideDown();
-        alertTimerId = setTimeout (function() {
-            $("div#message").slideUp();
-        }, 3000 );
-        return false;
-    });
     $("div#messengers a").click(function() {
         clearTimeout(alertTimerId);
         $("div#message").html($(this).children().attr("alt") + ": samadj91").slideDown();
@@ -60,6 +52,7 @@ $(document).ready(function() {
 </head>
 <body>
 <div id="container">
+    <div id="alert">I'm finally cool enough for Twitter! <a href="http://www.twitter.com/samadj91/">Folllow me.</a></div>
     <h1>Samad Jawaid</h1>
     <div id="message"></div>
     <div>
@@ -69,7 +62,7 @@ $(document).ready(function() {
         <a href="#myspace"><img src="static/images/icons/myspace.png" alt="MySpace" /></a>
         <br />
         <a href="http://picasaweb.google.com/samadj91/"><img src="static/images/icons/picasa.png" alt="Picasa" /></a>
-        <a href="#twitter"><img src="static/images/icons/twitter.png" alt="Twitter" /></a>
+        <a href="http://www.twitter.com/samadj91/"><img src="static/images/icons/twitter.png" alt="Twitter" /></a>
         <a href="http://profiles.yahoo.com/samadj91/"><img src="static/images/icons/yahoo.png" alt="Yahoo!" /></a>
         <a href="http://www.youtube.com/samadj91/"><img src="static/images/icons/youtube.png" alt="YouTube" /></a>
     </div>
