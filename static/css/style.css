@@ -5,6 +5,7 @@ a {
 body {
     background-color : #171717;
     color : #ffffff;
+    font-family : Tahoma;
     font-size : 15px;
     margin : 0px;
     text-align : center;
@@ -14,6 +15,9 @@ h1 {
 }
 h2 {
     font-size : 30px;
+}
+h2 a {
+    border-bottom : thin dotted;
 }
 img {
     border : 0;
