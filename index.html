@@ -32,7 +32,7 @@ $(document).ready(function() {
         return false;
     });
     $("div#fancybox a:has(img)").each(function() {
-        $(this).attr("title", $(this).siblings().html());
+        $(this).children().attr("alt", $(this).siblings().html());
     }).attr("rel", "screenshots").fancybox();
 });
 </script>
