@@ -34,6 +34,8 @@ $(document).ready(function() {
     $("div#fancybox a:has(img)").each(function() {
         $(this).children().attr("alt", $(this).siblings().html());
     }).attr("rel", "screenshots").fancybox();
+    var d = new Date();
+    $("span#year").html(d.getFullYear());
 });
 </script>
 <script type="text/javascript">
@@ -127,7 +129,7 @@ $(document).ready(function() {
         </div>
     </div>
     <h1>B4LLIN</h1>
-    <div id="footer">&copy; 2010</div>
+    <div id="footer">&copy; <span id="year"></span></div>
 </div>
 </body>
 </html>
