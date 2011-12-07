@@ -6,7 +6,7 @@
 <link type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" />
 <style type="text/css">
 body {
-    width : 320px;
+    width : 800px;
 }
 div.post {
     border-top : 1px solid #202020;
@@ -34,7 +34,7 @@ div.post div.body {
 <script type="text/javascript">
 $.fn.resize=function(a){var d=Math.ceil;if(a==null)a=200;var e=a,f=a;$(this).each(function(){var b=$(this).height(),c=$(this).width();if(b>c)f=d(c/b*a);else e=d(b/c*a);$(this).css({height:e,width:f})})};
 $(document).ready(function() {
-    $("img").resize($("body").width());
+    $("img").resize($("body").width()/2);
 });
 </script>
 </head>
