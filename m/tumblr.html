@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tumblr</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript" src="https://github.com/andyet/ICanHaz.js/raw/master/ICanHaz.min.js"></script>
+<script type="text/javascript" src="http://datejs.googlecode.com/svn/trunk/build/date-en-US.js"></script>
+<script id="answer" type="text/html">
+<li>
+    <p><em><a href="{{ url }}">{{ timestamp }}</a></em></p>
+    <p><strong>{{{ question }}}</strong></p>
+    {{{ answer }}}
+</li>
+</script>
+<script id="audio" type="text/html">
+<li>
+    <p><em><a href="{{ url }}">{{ timestamp }}</a></em></p>
+    <p><strong>{{{ audio-caption }}}</strong></p>
+    {{{ audio-player }}}
+</li>
+</script>
+<script id="quote" type="text/html">
+<li>
+    <p><em><a href="{{ url }}">{{ timestamp }}</a></em></p>
+    <p><strong>{{{ quote-text }}}</strong></p>
+    {{{ quote-source }}}
+</li>
+</script>
+<script id="regular" type="text/html">
+<li>
+    <p><em><a href="{{ url }}">{{ timestamp }}</a></em></p>
+    <p><strong>{{{ regular-title }}}</strong></p>
+    {{{ regular-body }}}
+</li>
+</script>
+<script id="video" type="text/html">
+<li>
+    <p><em><a href="{{ url }}">{{ timestamp }}</a></em></p>
+    <p><strong>{{{ video-caption }}}</strong></p>
+    {{{ video-player }}}
+</li>
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var blog = "americangentleman";
+    var start = 0;
+    var num = 50;
+    function more() {
+        $.getJSON("http://" + blog + ".tumblr.com/api/read/json?callback=?&start=" + start + "&num=" + num, function(data) {
+            $("title, h1").html(data.tumblelog.title);
+            $.each(data.posts, function(key, val) {
+                val["timestamp"] = new Date(val["unix-timestamp"] * 1000).toString("MMMM d, yyyy, h:mm tt");
+                if (val.type == "answer") {
+                    var post = ich.answer(val);
+                } else if (val.type == "audio") {
+                    var post = ich.audio(val);
+                } else if (val.type == "quote") {
+                    var post = ich.quote(val);
+                } else if (val.type == "regular") {
+                    var post = ich.regular(val);
+                } else if (val.type == "video") {
+                    var post = ich.video(val);
+                }
+                $("ul").append(post);
+            });
+            $("ul").listview("refresh");
+            start += num;
+            if (start > data["posts-total"]) {
+                $("#more").parent().hide();
+            }
+        });
+    }
+    more();
+    $("#more").click(function() {
+        $("ul").html("");
+        more();
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Tumblr</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview"></ul>
+    </div>
+    <div data-role="footer">
+        <a href="#" data-role="button" id="more">More</a>
+    </div>
+</div>
+</body>
+</html>
