@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shows</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $.getJSON("shows.json", function(shows) {
+        var shows_ul = $("ul");
+        $.each(shows, function(show, seasons) {
+            var show_li = $("<li>" + show + "</li>");
+            if (seasons.length > 0) {
+                var seasons_ul = $("<ul></ul>");
+                $.each(seasons, function(season, episodes) {
+                    var season_li = $("<li>Season " + (season + 1) + "</li>");
+                    if (episodes.length > 0) {
+                        var episodes_ol = $("<ol></ol>");
+                        $.each(episodes, function(i, episode) {
+                            var episode_li = $("<li>" + episode.join("<br />") + "</li>");
+                            episodes_ol.append(episode_li);
+                        });
+                        season_li.append(episodes_ol);
+                    }
+                    seasons_ul.append(season_li);
+                });
+                show_li.append(seasons_ul)
+            }
+            shows_ul.append(show_li);
+        });
+        shows_ul.listview("refresh");
+    });
+});
+</script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Shows</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview"></ul>
+    </div>
+</div>
+</body>
+</html>
