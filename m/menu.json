@@ -1,0 +1,424 @@
+[
+    {
+        "date": "Sunday, January 15, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Carved Ham", 
+                "Parmesan Chicken W\/Marinara"
+            ], 
+            "Kettle Classics": [
+                "Minestrone Soup"
+            ], 
+            "Pasta": []
+        }
+    }, 
+    {
+        "date": "Monday, January 16, 2012", 
+        "menu": {
+            "Grill": [
+                "Southwest Turkey Burger"
+            ], 
+            "Homestyle Classics": [
+                "Chili Cheese Dog", 
+                "Turkey Tetrazinni"
+            ], 
+            "Kettle Classics": [
+                "Tortilla Soup"
+            ], 
+            "Pasta": [
+                "Penne Pasta", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Chicken Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Tuesday, January 17, 2012", 
+        "menu": {
+            "Grill": [
+                "Bacon Cheeseburger"
+            ], 
+            "Homestyle Classics": [
+                "Fried Perch", 
+                "Soft Shell Bean Taco", 
+                "Carnitas Pork Taco"
+            ], 
+            "Kettle Classics": [
+                "Twice Baked Potato"
+            ], 
+            "Pasta": [
+                "Pasta Shells", 
+                "Beef Marinara", 
+                "Mushroom Marinara", 
+                "Southwestern Alfredo", 
+                "Pesto Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Wednesday, January 18, 2012", 
+        "menu": {
+            "Grill": [
+                "Chicken Cordon Bleu"
+            ], 
+            "Homestyle Classics": [
+                "Jerk Chicken Pita", 
+                "Meatball Sandwich"
+            ], 
+            "Kettle Classics": [
+                "Navy Bean Soup"
+            ], 
+            "Pasta": [
+                "Ziti", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Herb Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Thursday, January 19, 2012", 
+        "menu": {
+            "Grill": [
+                "Grilled Ham & Cheese"
+            ], 
+            "Homestyle Classics": [
+                "Chipotle Chicken Breast", 
+                "Beef & Broccoli Stir Fry"
+            ], 
+            "Kettle Classics": [
+                "Vegetable Soup"
+            ], 
+            "Pasta": [
+                "Spaghetti", 
+                "Beef Marinara", 
+                "Southwestern Alfredo", 
+                "Pesto Alfredo", 
+                "Vegetable Marinara"
+            ]
+        }
+    }, 
+    {
+        "date": "Friday, January 20, 2012", 
+        "menu": {
+            "Grill": [
+                "Jumbo Hot Dogs"
+            ], 
+            "Homestyle Classics": [
+                "French Dip Sandwich", 
+                "Bacon & Cheese Quiche", 
+                "Vegetable Quiche"
+            ], 
+            "Kettle Classics": [
+                "French Onion"
+            ], 
+            "Pasta": [
+                "Fettucini", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Primavera Sauce"
+            ]
+        }
+    }, 
+    {
+        "date": "Saturday, January 21, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Scrambled Eggs", 
+                "Belgian Waffles", 
+                "Mexican Lasagna"
+            ], 
+            "Kettle Classics": [
+                "Beef Barley"
+            ], 
+            "Pasta": []
+        }
+    }, 
+    {
+        "date": "Sunday, January 22, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Carved Roast Beef", 
+                "Italian Sausage"
+            ], 
+            "Kettle Classics": [
+                "Chicken Vegetable"
+            ], 
+            "Pasta": []
+        }
+    }, 
+    {
+        "date": "Monday, January 23, 2012", 
+        "menu": {
+            "Grill": [
+                "Southwest Turkey Burger"
+            ], 
+            "Homestyle Classics": [
+                "Chicken Nuggets", 
+                "Penne Cacciatore"
+            ], 
+            "Kettle Classics": [
+                "Black Bean"
+            ], 
+            "Pasta": [
+                "Mostaccioli", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Beef Marinara", 
+                "Alfredo Sauce"
+            ]
+        }
+    }, 
+    {
+        "date": "Tuesday, January 24, 2012", 
+        "menu": {
+            "Grill": [
+                "Bacon Cheeseburger"
+            ], 
+            "Homestyle Classics": [
+                "Bbq Pork Cutlet", 
+                "Honey Chicken Wrap"
+            ], 
+            "Kettle Classics": [
+                "Potato Chowder"
+            ], 
+            "Pasta": [
+                "Bow Tie Pasta", 
+                "Sausage Marinara", 
+                "White Clam Sauce", 
+                "Mushroom Marinara", 
+                "Pesto Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Wednesday, January 25, 2012", 
+        "menu": {
+            "Grill": [
+                "Chicken Cordon Bleu"
+            ], 
+            "Homestyle Classics": [
+                "Blazing Redfish", 
+                "Hard Shell Beef Tacos", 
+                "Hard Shell Bean Tacos"
+            ], 
+            "Kettle Classics": [
+                "White Turkey Chili"
+            ], 
+            "Pasta": [
+                "Rigatoni", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Beef Marinara", 
+                "Herb Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Thursday, January 26, 2012", 
+        "menu": {
+            "Grill": [
+                "Grilled Ham & Cheese"
+            ], 
+            "Homestyle Classics": [
+                "Turkey Divan Lavash Wrap", 
+                "Southwest Style Chili"
+            ], 
+            "Kettle Classics": [
+                "Cheddar Broccoli & Noodles"
+            ], 
+            "Pasta": [
+                "Cavatappi", 
+                "Sausage Marinara", 
+                "Pesto Alfredo", 
+                "Vegetable Marinara", 
+                "Alfredo Sauce"
+            ]
+        }
+    }, 
+    {
+        "date": "Friday, January 27, 2012", 
+        "menu": {
+            "Grill": [
+                "Jumbo Hot Dogs"
+            ], 
+            "Homestyle Classics": [
+                "Pasta W\/Carbonara Sauce", 
+                "Fish Sandwich"
+            ], 
+            "Kettle Classics": [
+                "Clam Chowder"
+            ], 
+            "Pasta": [
+                "Macaroni", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Beef Marinara", 
+                "Primavera Sauce"
+            ]
+        }
+    }, 
+    {
+        "date": "Saturday, January 28, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Scrambled Eggs", 
+                "Chocolate Chip Pancakes", 
+                "Roast Beef & Cheddar"
+            ], 
+            "Kettle Classics": [
+                "Twice Baked Potato"
+            ], 
+            "Pasta": []
+        }
+    }, 
+    {
+        "date": "Sunday, January 29, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Fried Chicken", 
+                "Honey Mustard Pork Loin"
+            ], 
+            "Kettle Classics": [
+                "Tortilla Soup"
+            ], 
+            "Pasta": []
+        }
+    }, 
+    {
+        "date": "Monday, January 30, 2012", 
+        "menu": {
+            "Grill": [
+                "Southwest Turkey Burger"
+            ], 
+            "Homestyle Classics": [
+                "Gyro Wrap", 
+                "Chicken Pot Pie"
+            ], 
+            "Kettle Classics": [
+                "Vegetable Gumbo"
+            ], 
+            "Pasta": [
+                "Penne Pasta", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Chicken Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Tuesday, January 31, 2012", 
+        "menu": {
+            "Grill": [
+                "Bacon Cheeseburger"
+            ], 
+            "Homestyle Classics": [
+                "Corn Dog", 
+                "Chicken Taco", 
+                "Hard Shell Bean Tacos"
+            ], 
+            "Kettle Classics": [
+                "Taco Soup"
+            ], 
+            "Pasta": [
+                "Pasta Shells", 
+                "Beef Marinara", 
+                "Mushroom Marinara", 
+                "Southwestern Alfredo", 
+                "Pesto Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Wednesday, February 1, 2012", 
+        "menu": {
+            "Grill": [
+                "Chicken Cordon Bleu"
+            ], 
+            "Homestyle Classics": [
+                "Chicken Breast Strips", 
+                "Vegetable Enchilada"
+            ], 
+            "Kettle Classics": [
+                "Cream Of Asparagus"
+            ], 
+            "Pasta": [
+                "Ziti", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Herb Alfredo"
+            ]
+        }
+    }, 
+    {
+        "date": "Thursday, February 2, 2012", 
+        "menu": {
+            "Grill": [
+                "Grilled Ham & Cheese"
+            ], 
+            "Homestyle Classics": [
+                "Chicket Filet Sandwich", 
+                "Linguine W\/Cream And Broccoli Sauce"
+            ], 
+            "Kettle Classics": [
+                "Cream Of Chicken"
+            ], 
+            "Pasta": [
+                "Spaghetti", 
+                "Beef Marinara", 
+                "Southwestern Alfredo", 
+                "Pesto Alfredo", 
+                "Vegetable Marinara"
+            ]
+        }
+    }, 
+    {
+        "date": "Friday, February 3, 2012", 
+        "menu": {
+            "Grill": [
+                "Jumbo Hot Dogs"
+            ], 
+            "Homestyle Classics": [
+                "Sloppy Joe", 
+                "Chicken Ceasar Wrap", 
+                "Caesar Wrap"
+            ], 
+            "Kettle Classics": [
+                "Beef Noodle Soup"
+            ], 
+            "Pasta": [
+                "Fettucini", 
+                "Sausage Marinara", 
+                "Plain Marinara", 
+                "Cheese Sauce", 
+                "Primavera Sauce"
+            ]
+        }
+    }, 
+    {
+        "date": "Saturday, February 4, 2012", 
+        "menu": {
+            "Grill": [], 
+            "Homestyle Classics": [
+                "Scrambled Eggs", 
+                "Cinnamon Texas Toast", 
+                "Ultimate Nachos"
+            ], 
+            "Kettle Classics": [
+                "Chicken Gumbo"
+            ], 
+            "Pasta": []
+        }
+    }
+]

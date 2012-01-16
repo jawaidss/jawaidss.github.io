@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $.getJSON("menu.json", function(days) {
+        var days_ul = $("ul");
+        $.each(days, function(i, day) {
+            var day_li = $("<li>" + day.date + "</li>");
+            var cuisines_ul = $("<ul></ul>");
+            $.each(day.menu, function(cuisine, entries) {
+                var cuisine_li = $("<li><h2>" + cuisine + "</h2>" + entries.join("<br />") + "</li>");
+                if (entries.length == 0) {
+                    cuisine_li.append("<em>None</em>");
+                }
+                cuisines_ul.append(cuisine_li);
+            });
+            day_li.append(cuisines_ul)
+            days_ul.append(day_li);
+        });
+        days_ul.listview("refresh");
+    });
+});
+</script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Menu</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview"></ul>
+    </div>
+</div>
+</body>
+</html>
